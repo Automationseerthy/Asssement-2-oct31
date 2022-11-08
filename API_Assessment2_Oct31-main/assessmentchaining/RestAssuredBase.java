@@ -1,11 +1,11 @@
 package assessmentchaining;
-
+import org.testng.annotations.BeforeMethod;
 import io.restassured.RestAssured;
 
 public class RestAssuredBase {
 	
 public static String sys_id;	
-	
+@BeforeMethod	
 public void setup() 
 {
 	RestAssured.baseURI="
